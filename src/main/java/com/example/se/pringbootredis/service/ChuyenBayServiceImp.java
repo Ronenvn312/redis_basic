@@ -57,9 +57,9 @@ public class ChuyenBayServiceImp implements ChuyenBayService{
 	}
 
 	@Override
-	public void deleteById(String maCB) {
-		// TODO Auto-generated method stub
-		
+	public Long deleteById(String maCB) {
+		 Long deleted = hashOperations.delete(CHUYENBAY_CACHE, maCB);
+		return deleted;
 	}
 
 	@Override

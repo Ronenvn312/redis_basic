@@ -10,8 +10,7 @@ public interface ChuyenBayService {
 	public ChuyenBay findById(String theId);
 	public ArrayList<ChuyenBay> findByGaDen(String gaDen);
 	public ChuyenBay save(ChuyenBay chuyenBay);
-	public void deleteById(String maCB);
-	
+	public Long deleteById(String maCB);
 	public List<ChuyenBay> findByDuongbay(int dbay1, int dbay2);
 	public List<ChuyenBay> findBySG_BMT(String gadi, String daden);
 	public int countChuyenBay(String gadi);
